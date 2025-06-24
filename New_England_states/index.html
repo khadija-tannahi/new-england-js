@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+    
+    <style>
+        @import url("style/stylesheet.css");
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+
+
+  
+  </head>
+
+  <body>
+    <header>
+
+    <div class="container">
+
+   <div class="logo">
+
+       <img src="images/logo.png" alt="Logo">
+
+   </div>
+
+<nav>
+
+   <script>
+
+    universities = new Array("Yale University","University of Maine","Harvard University","Dartmouth College","Brown University","Middlebury College");
+
+    Urls = new Array ("yale.edu", "umaine.edu", "harvard.edu", "dartmouth.edu", "brown.edu","middlebury.edu");
+
+    universities.sort();
+    Urls.sort();
+
+    for (i=0; i<= Urls.length-1; i++) {
+
+    document.write("<input type='button' value='" + universities[i] + "' onclick=document.location='http://www." + Urls[i] +"'>");
+
+    }
+
+  </script>
+
+</nav>
+
+   </div>
+
+
+
+    </header>
+
+    
+
+    <main>
+
+      <div>
+        <img src="images/banner.png" alt="H1 Image" class="image1">
+      </div>
+
+      <br> <br>
+
+      <div>
+        <h1 class="h1-geography">
+          New England States
+        </h1>
+
+        <p class="p-geography">
+          New England comprises six states: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont.
+          <br>
+          The region is known for its diverse geography, 
+          including rugged coastlines, dense forests, rolling hills,
+          and picturesque mountains such as the White Mountains in New Hampshire and the Green Mountains in Vermont. 
+        </p>
+      </div>
+
+      <br> <br>
+
+            
+      <div class="all-cards">
+
+        <div class="card-container">
+          <img src="images/connecticut.jpeg" alt="Connecticut" class="card-img" style="width: 100%;">
+          <div class="text">
+            <h2>Connecticut</h2>
+          </div>
+        </div>
+  
+        <div class="card-container">
+          <img src="images/maine.jpeg" alt="Maine" class="card-img" style="width: 100%;">
+          <div class="text">
+            <h2>Maine</h2>
+          </div>
+        </div>
+        
+        <div class="card-container">
+          <img src="images/massachusetts.jpeg" alt="Massachusetts" class="card-img" style="width: 100%;">
+          <div class="text">
+            <h2>Massachusetts</h2>
+          </div>
+        </div>
+  
+        <div class="card-container2">
+          <img src="images/new-hampshire.jpeg" alt="New Hampshire" class="card-img" style="width: 100%;">
+          <div class="text">
+            <h2>New Hampshire</h2>
+          </div>
+        </div>
+  
+        <div class="card-container2">
+          <img src="images/rhode-island.jpeg" alt="Rhode Island" class="card-img" style="width: 100%;">
+          <div class="text">
+            <h2>Rhode Island</h2>
+          </div>
+        </div>
+  
+        <div class="card-container2">
+          <img src="images/vermont.jpeg" alt="Vermont" class="card-img" style="width: 100%;">
+          <div class="text">
+            <h2>Vermont</h2>
+          </div>
+        </div>
+  
+      </div>
+
+
+
+      <div class="education-section">
+        <h2 class="section-title">Education in New England</h2>
+
+        
+            <h3 class="university-name">Harvard University</h3>
+        <div class="university">  
+            <img class="image" src="images/harvard.jpeg" alt="Harvard University Campus">
+            <p class="description">
+              Established in 1636, Harvard is the oldest institution of higher education in the United States and is located in Cambridge, Massachusetts.
+              It is renowned for its academic excellence and has produced numerous Nobel laureates, Rhodes Scholars, and world leaders.
+            </p>
+            
+        </div>
+
+        
+            <h3 class="university-name">Massachusetts Institute of Technology (MIT)</h3>
+        <div class="university">
+            <img class="image" src="images/mit.jpeg" alt="MIT Campus">
+            <p class="description">
+              Founded in 1861 and located in Cambridge, 
+              MIT is renowned for its cutting-edge research and innovation in science, engineering, and technology. 
+              It is consistently ranked among the top universities globally.
+            </p>
+            
+        </div>
+
+      
+            <h3 class="university-name">Yale University</h3>
+        <div class="university">
+            <img class="image" src="images/yale.jpeg" alt="Yale University Campus">
+            <p class="description">
+              Founded in 1701 in New Haven, Connecticut, 
+              Yale is one of the oldest and most prestigious universities in the United States. 
+              It is known for its rigorous academic programs, world-class faculty, and historic campus.
+            </p>
+            
+        </div>
+
+        
+            <h3 class="university-name">Dartmouth College</h3>
+        <div class="university">
+            <img class="image" src="images/dartmouth.jpeg" alt="Dartmouth College Campus">
+            <p class="description">
+              Established in 1769 in Hanover, New Hampshire, 
+              Dartmouth is a private Ivy League research university known for its strong undergraduate programs, 
+              emphasis on liberal arts education, and vibrant campus life.
+            </p>
+           
+        </div>
+
+    </div>
+
+
+  <script>
+
+
+
+        var ste = new Array ("Connecticut", "Maine", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont");
+        var num = parseInt(prompt("Input a number between 0 and 5:",0));
+
+        if (num >= 0 && num <= ste.length) {
+          alert ("The" + " " + "state" + " " + "is" + " " +  ste[num]);
+        }
+
+        else {
+          alert ("Invalid Number");
+        }
+
+  </script>
+
+
+    </main>
+    
+    
+    <br> <br>
+
+    <footer>
+      <p>&copy; 2024 JavaScript _ Khadija.T</p>
+    </footer>
+
+
+  </body>
+</html>
